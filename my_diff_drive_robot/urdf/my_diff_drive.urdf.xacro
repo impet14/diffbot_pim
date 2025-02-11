@@ -152,10 +152,10 @@
       <left_joint>left_wheel_joint</left_joint>
       <right_joint>right_wheel_joint</right_joint>
       <command_topic>cmd_vel</command_topic>
-      <!-- <odometry_topic>odom</odometry_topic>
+      <odometry_topic>odom</odometry_topic>
       <odometry_frame>odom</odometry_frame>
       <publish_odom>true</publish_odom>
-      <publish_odom_tf>true</publish_odom_tf> -->
+      <publish_odom_tf>true</publish_odom_tf>
       <publish_wheel_tf>true</publish_wheel_tf>
       <robot_base_frame>base_link</robot_base_frame>
       <wheel_separation>0.35</wheel_separation>
