@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>my_diff_drive_robot</name>
+  <version>0.0.1</version>
+  <description>Two-wheel differential drive robot with LiDAR for simulation.</description>
+
+  <maintainer email="your_email@example.com">Your Name</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- Build tool dependencies -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <build_depend>xacro</build_depend>
+  <build_depend>rviz2</build_depend>
+
+  <!-- Execution dependencies -->
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>controller_manager</exec_depend>
+  <exec_depend>diff_drive_controller</exec_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>position_controllers</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+
+  <!-- For tests -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <!-- Additional dependencies you might need -->
+  <build_depend>ament_cmake_python</build_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

@@ -1,0 +1,64 @@
+[0.010s] Invoking command in '/home/m/my_ros2_ws/src/build/my_diff_drive_robot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/m/my_ros2_ws/src/my_diff_drive_robot -DCMAKE_INSTALL_PREFIX=/home/m/my_ros2_ws/src/install/my_diff_drive_robot
+[0.093s] -- The C compiler identification is GNU 11.4.0
+[0.159s] -- The CXX compiler identification is GNU 11.4.0
+[0.166s] -- Detecting C compiler ABI info
+[0.224s] -- Detecting C compiler ABI info - done
+[0.228s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.230s] -- Detecting C compile features
+[0.230s] -- Detecting C compile features - done
+[0.233s] -- Detecting CXX compiler ABI info
+[0.292s] -- Detecting CXX compiler ABI info - done
+[0.296s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.296s] -- Detecting CXX compile features
+[0.297s] -- Detecting CXX compile features - done
+[0.324s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.432s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.507s] -- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)
+[0.509s] -- Found rviz2: 11.2.14 (/opt/ros/humble/share/rviz2/cmake)
+[0.511s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.568s] -- Added test 'copyright' to check source files copyright and LICENSE
+[0.569s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.569s] -- Added test 'lint_cmake' to check CMake code style
+[0.570s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.571s] -- Added test 'xmllint' to check XML markup files
+[0.571s] -- Configuring done
+[0.573s] -- Generating done
+[0.574s] -- Build files have been written to: /home/m/my_ros2_ws/src/build/my_diff_drive_robot
+[0.578s] Invoked command in '/home/m/my_ros2_ws/src/build/my_diff_drive_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/m/my_ros2_ws/src/my_diff_drive_robot -DCMAKE_INSTALL_PREFIX=/home/m/my_ros2_ws/src/install/my_diff_drive_robot
+[0.579s] Invoking command in '/home/m/my_ros2_ws/src/build/my_diff_drive_robot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/m/my_ros2_ws/src/build/my_diff_drive_robot -- -j22 -l22
+[0.612s] Invoked command in '/home/m/my_ros2_ws/src/build/my_diff_drive_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/m/my_ros2_ws/src/build/my_diff_drive_robot -- -j22 -l22
+[0.621s] Invoking command in '/home/m/my_ros2_ws/src/build/my_diff_drive_robot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/m/my_ros2_ws/src/build/my_diff_drive_robot
+[0.625s] -- Install configuration: ""
+[0.625s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/urdf
+[0.626s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/urdf/diffbot.urdf
+[0.627s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/urdf/inertial_macros.xacro
+[0.627s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/urdf/my_diff_drive.urdf.xacro
+[0.627s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/urdf/my_robot.urdf
+[0.628s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/urdf/lidar.xacro
+[0.628s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/launch
+[0.628s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/launch/gazebo_diff.launch.py
+[0.628s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/launch/gazebo.launch.py
+[0.628s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/launch/robot_state_publisher.launch.py
+[0.628s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/launch/display.launch copy.py
+[0.628s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/launch/diffdrive.launch.py
+[0.629s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/launch/display.launch.py
+[0.629s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/rviz
+[0.629s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/rviz/urdf.rviz
+[0.629s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/config
+[0.629s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/config/diffdrive.yaml
+[0.629s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/ament_index/resource_index/package_run_dependencies/my_diff_drive_robot
+[0.629s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/ament_index/resource_index/parent_prefix_path/my_diff_drive_robot
+[0.629s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/environment/ament_prefix_path.sh
+[0.630s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/environment/ament_prefix_path.dsv
+[0.630s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/environment/path.sh
+[0.630s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/environment/path.dsv
+[0.630s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/local_setup.bash
+[0.630s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/local_setup.sh
+[0.630s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/local_setup.zsh
+[0.630s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/local_setup.dsv
+[0.630s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/package.dsv
+[0.630s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/ament_index/resource_index/packages/my_diff_drive_robot
+[0.630s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/cmake/my_diff_drive_robotConfig.cmake
+[0.630s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/cmake/my_diff_drive_robotConfig-version.cmake
+[0.631s] -- Installing: /home/m/my_ros2_ws/src/install/my_diff_drive_robot/share/my_diff_drive_robot/package.xml
+[0.632s] Invoked command in '/home/m/my_ros2_ws/src/build/my_diff_drive_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/m/my_ros2_ws/src/build/my_diff_drive_robot
