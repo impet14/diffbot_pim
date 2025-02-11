@@ -1,0 +1,118 @@
+slam_toolbox:
+  ros__parameters:
+
+    ###########################
+    # General ROS Settings
+    ###########################
+    use_sim_time: true         # Whether to use simulation time (Gazebo). Set to false on a real robot
+    base_frame: "base_link"    # Your robot’s base frame
+    odom_frame: "odom"         # The frame where odometry is published
+    map_frame: "map"           # The root frame for the SLAM Toolbox
+
+    # (Optional) If your laser scan topic is different, set it here.
+    scan_topic: "scan"
+
+    # This sets how frequently the map is published or updated, in seconds.
+    map_update_interval: 3.0
+
+    # The minimum distance to consider movement valid in the map, in meters
+    # (helps filter out minor "noisy" motion).
+    minimum_travel_distance: 0.2
+
+    # Whether to publish the occupancy grid via /map topic.
+    # Typically "true" for live SLAM.
+    publish_map: true
+
+    ##################################
+    # Mode: (online_async or online_sync)
+    ##################################
+    # Slam Toolbox has two primary online modes: asynchronous or synchronous.
+    # - "online_async" is typically recommended for a continuous mapping experience
+    # - "online_sync" can be used if you want to process scans in synchronous callbacks
+
+    mode: "mapping"  # For "online_async_launch.py", you usually want "mapping" 
+                     # If "localization", it would try to localize on an existing map.
+
+    ###########################
+    # Kinematic Settings
+    ###########################
+    # If your robot can rotate in place, set to true (differential drive).
+    # If you have a car-like robot (Ackermann steering), set to false.
+    # This helps with how the SLAM solver interprets motion.
+    allow_unknown_initial_pose: true
+
+    ###########################
+    # Solver/Optimizer Settings
+    ###########################
+    # This sets the plugin used for scan matching and optimization.
+    # "plugin" can be:
+    #    - "Karto" (classic approach),
+    #    - "G2O" (graph-based approach),
+    #    - or others. Karto is a common default.
+
+    solver_plugins:
+      - solver_type: "Karto"
+
+    # The number of iterations the solver performs every update.
+    optimization_iterations: 10
+
+    # Adjust thresholds for how "good" a loop closure or scan match must be.
+    resolution: 0.05    # resolution of the map in meters/pixel
+    max_laser_range: 8.0
+    min_laser_range: 0.2
+
+    ###########################
+    # Scan Matching Parameters
+    ###########################
+    # How big the correlative scan matching window is in (x, y, theta).
+    # Larger windows are more robust but more computationally heavy.
+    correlation_search_space_pose: 0.3      # translational window in meters
+    correlation_search_space_angle: 0.2     # rotational window in radians
+    loop_search_space_pose: 0.5
+    loop_search_space_angle: 0.2
+
+    # Thresholds for how close a scan match must be to consider it valid.
+    # Lower thresholds require near-perfect matches; higher thresholds allow more drift but can accept more closures.
+    loop_match_min_response: 0.3
+    scan_match_min_response_normal: 0.8
+
+    ###########################
+    # Loop Closure Settings
+    ###########################
+    # Attempt loop closures at specified intervals (in meters or time).
+    # Setting these too high or too low can affect performance.
+    loop_closure_enabled: true
+    loop_closure_detect_radius: 1.0   # meters
+
+    # If you want to always have a large window for loop closures, this can be helpful for large maps.
+    map_file_name: ""  # If left empty, no map is loaded at start (online mapping).
+                       # If you wanted to load a prior map, you'd specify it here.
+
+    ###########################
+    # Lifecycle & Serialization
+    ###########################
+    # Slam Toolbox can serialize data so you can pause and resume sessions or load older maps.
+    serialization_enabled: false
+    # If true, will write .posegraph files to disk on shutdown (for advanced usage).
+
+    ###########################
+    # Localization Settings (Optional)
+    ###########################
+    # If you switch your mode to "localization", some of these matter more.
+    use_scan_matching: true
+    use_loop_closure: true
+    # Add parameters for AMCL-like behavior if needed, see the SLAM Toolbox wiki.
+
+    ###########################
+    # Visualizations
+    ###########################
+    # If you'd like to visualize the graph or constraints in RViz, you can enable these.
+    use_rviz: true
+
+    ###########################
+    # Debug / Logging
+    ###########################
+    # Output debug info, help diagnose scan match performance, etc.
+    enable_scan_diagnostics: false
+    # Logging level: can be debug, info, warn, error, etc.
+    # (In ROS 2, typically set via CLI or environment variable.)

@@ -1,6 +1,0 @@
-Invoking command in '/home/m/my_ros2_ws/src/build/my_diff_drive_robot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/m/my_ros2_ws/src/my_diff_drive_robot -DCMAKE_INSTALL_PREFIX=/home/m/my_ros2_ws/src/install/my_diff_drive_robot
-Invoked command in '/home/m/my_ros2_ws/src/build/my_diff_drive_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/m/my_ros2_ws/src/my_diff_drive_robot -DCMAKE_INSTALL_PREFIX=/home/m/my_ros2_ws/src/install/my_diff_drive_robot
-Invoking command in '/home/m/my_ros2_ws/src/build/my_diff_drive_robot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/m/my_ros2_ws/src/build/my_diff_drive_robot -- -j22 -l22
-Invoked command in '/home/m/my_ros2_ws/src/build/my_diff_drive_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/m/my_ros2_ws/src/build/my_diff_drive_robot -- -j22 -l22
-Invoking command in '/home/m/my_ros2_ws/src/build/my_diff_drive_robot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/m/my_ros2_ws/src/build/my_diff_drive_robot
-Invoked command in '/home/m/my_ros2_ws/src/build/my_diff_drive_robot' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/m/my_ros2_ws/src/build/my_diff_drive_robot
