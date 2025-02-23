@@ -22,9 +22,11 @@ find_package(rviz2 REQUIRED)
 # find_package(rqt_robot_steering REQUIRED)
 
 # Install URDF, launch, and RViz files
-install(DIRECTORY urdf launch rviz config
+install(DIRECTORY urdf launch rviz config 
   DESTINATION share/${PROJECT_NAME}
 )
+
+
 
 # If you have any scripts (Python or others) to install, you could do something like:
 # install(PROGRAMS scripts/my_script.py
